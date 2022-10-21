@@ -139,23 +139,34 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes(arr) {
-  if(arr.length==0){
-    return 0
+function howManyTimes(arr,word){
+  let count=0
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]===word){
+      count++
+    }
   }
- let wordArr=[]
- let times=0
-//   for(let i=0;i<arr.length;i++){
-//     wordArr.push(arr[i])
-//     for(let j=0;j<wordArr.length;j++){
-//       if(arr[i]===wordArr[j]){
-// times++
-//       }
-//     }
-
-//   }
-return times
+  return count
 }
+
+
+// function howManyTimes(arr) {
+//   let wordArr=[]
+//   let times=0
+//   let oneTime=1
+//   if(arr.length==0){
+//     return 0
+//   }
+
+// for(let i=0;i<arr.length;i++){
+// wordArr.push(arr[i])
+// if(wordArr.includes(arr[i+1])){
+//   times++
+// }
+// }
+// return times
+// }
+
 
 
 
